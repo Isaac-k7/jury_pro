@@ -45,9 +45,8 @@ public class Evenement {
         this.id = id;
     }
 
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return getId() + " " + getNom() + " " + getType() + " " + getDateDebut() + " " + getDateFin();
-    }
+    //@Override
+    //public String toString() {
+        //return getId() + " " + getNom() + " " + getType() + " " + getDateDebut() + " " + getDateFin();
+    //}
 }
