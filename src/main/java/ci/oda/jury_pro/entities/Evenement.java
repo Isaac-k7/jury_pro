@@ -1,7 +1,7 @@
 package ci.oda.jury_pro.entities;
-import java.util.Date;
-import javax.persistence.*;
 
+import java.util.Date;
+//import javax.persistence.*;
 
 // @Entity
 // @TAble(name = "evenement")
@@ -13,52 +13,41 @@ public class Evenement {
     private Date dateDebut;
     private Date dateFin;
 
-    public Evenement(int id, String type, String nom, Date dateDebut, Date dateFin)
-    {
+    public Evenement(int id, String type, String nom, Date dateDebut, Date dateFin) {
         this.id = id;
         this.type = type;
         this.nom = nom;
         this.dateDebut = dateDebut;
         this.dateFin = dateFin;
-	}
+    }
 
-	public int getId()
-    {
+    public int getId() {
         return id;
     }
 
-    public String getType()
-    {
+    public String getType() {
         return type;
     }
 
-    public String getNom()
-    {
+    public String getNom() {
         return nom;
     }
 
-    public Date getDateDebut()
-    {
+    public Date getDateDebut() {
         return dateDebut;
     }
 
-    public Date getDateFin()
-    {
+    public Date getDateFin() {
         return dateFin;
     }
 
-    public void setId(int id)
-    {
+    public void setId(int id) {
         this.id = id;
     }
 
     @Override
     public String toString() {
         // TODO Auto-generated method stub
-        return getId() + " " +
-            getNom() + " " +
-            getType() + " "+
-            getDateDebut() + " "+
-            getDateFin();
+        return getId() + " " + getNom() + " " + getType() + " " + getDateDebut() + " " + getDateFin();
     }
 }
