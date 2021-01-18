@@ -27,10 +27,14 @@ public class EvenementsService{
         try{
             if(evenement.getId()>0){
                 Evenement item = evenementsRepository.getOne(evenement.getId());
+                // evenementsRepository.save(item);
                 if (item==null){
                     throw new Exception("Evenement not found with id  : "+ evenement.getId());
                 }
+
             }
+            evenementsRepository.save(evenement);
+
         }
         catch(Exception e){
             System.err.println(e.getMessage());

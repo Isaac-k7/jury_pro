@@ -14,12 +14,7 @@ public class Evenement {
     private Date dateFin;
 
     public Evenement(int id, String type, String nom, Date dateDebut, Date dateFin) {
-        this.id = id;
-        this.type = type;
-        this.nom = nom;
-        this.dateDebut = dateDebut;
-        this.dateFin = dateFin;
-    }
+ }
 
     public int getId() {
         return id;
