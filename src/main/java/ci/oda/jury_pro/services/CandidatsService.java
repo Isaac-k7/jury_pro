@@ -19,6 +19,10 @@ public class CandidatsService {
         return candidatRepository.findAll();
     }
 
+    public List<Candidats> getAllByEvent(int id_event) {
+        return candidatRepository.findByEvenementId(id_event);
+    }
+
     /*
     * Recuperation par identifiant
     */

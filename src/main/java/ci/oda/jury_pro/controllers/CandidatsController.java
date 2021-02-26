@@ -25,12 +25,18 @@ public class CandidatsController {
         return candidatsService.getAll();
     }
 
+    @GetMapping("/candidats/event/{id_event}")
+    public List<Candidats> getAll(@PathVariable int id_event){
+
+        return candidatsService.getAllByEvent(id_event);
+    }
+
     @GetMapping("/candidats/{candidats_id}")
     public Candidats getById(@PathVariable int candidats_id){
 
         return candidatsService.getById(candidats_id);
     }
-
+    
 
     @PostMapping("/candidats")
     public Boolean createOrUpdate(@RequestBody Candidats candidats){

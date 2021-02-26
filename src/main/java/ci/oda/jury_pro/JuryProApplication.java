@@ -10,6 +10,4 @@ public class JuryProApplication {
 		SpringApplication.run(JuryProApplication.class, args);
 		System.out.print("hello world");
 	}
-	
-
 }

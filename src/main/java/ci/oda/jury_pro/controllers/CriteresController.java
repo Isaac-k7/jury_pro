@@ -24,6 +24,12 @@ public class CriteresController {
         return criteresService.getAll();
     }
 
+    @GetMapping("/criteres/event/{id_event}")
+    public List<Criteres> getAll(@PathVariable int id_event){
+
+        return criteresService.getAllByEvent(id_event);
+    }
+
     @GetMapping("/criteres/{critere_id}")
     public Criteres getById(@PathVariable int critere_id) {
 

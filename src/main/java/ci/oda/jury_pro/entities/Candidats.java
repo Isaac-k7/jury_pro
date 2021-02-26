@@ -16,21 +16,21 @@ public class Candidats {
     private int candidat_code;
     private String candidat_nom;
     private String candidat_prenom;
-    private Byte[] candidat_photo;
+    private byte[] candidat_photo;
     private String candidat_email;
     private int candidat_telephone;
-    private int evenement_id;
+    private int evenementId;
 
     public int getCandidat_id() {
         return candidat_id;
     }
 
-    public int getEvenement_id() {
-        return evenement_id;
+    public int getevenementId() {
+        return evenementId;
     }
 
-    public void setEvenement_id(int evenement_id) {
-        this.evenement_id = evenement_id;
+    public void setevenementId(int evenementId) {
+        this.evenementId = evenementId;
     }
 
     public int getCandidat_telephone() {
@@ -49,11 +49,11 @@ public class Candidats {
         this.candidat_email = candidat_email;
     }
 
-    public Byte[] getCandidat_photo() {
+    public byte[] getCandidat_photo() {
         return candidat_photo;
     }
 
-    public void setCandidat_photo(Byte[] candidat_photo) {
+    public void setCandidat_photo(byte[] candidat_photo) {
         this.candidat_photo = candidat_photo;
     }
 

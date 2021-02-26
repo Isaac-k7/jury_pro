@@ -18,7 +18,9 @@ public class CriteresService {
     public List<Criteres> getAll() {
         return critereRepository.findAll();
     }
-
+    public List<Criteres> getAllByEvent(int id_event) {
+        return critereRepository.findByEvenementId(id_event);
+    }
     /*
     * Recuperation par identifiant
     */

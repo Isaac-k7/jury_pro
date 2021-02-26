@@ -15,18 +15,19 @@ public class Criteres {
     private int criteres_id;
     private String criteres_libelle;
     private Double candidat_bareme;
-    private int evenement_id;
+    private String detail;
+    private int evenementId;
 
     public int getCriteres_id() {
         return criteres_id;
     }
 
-    public int getEvenement_id() {
-        return evenement_id;
+    public int getevenementId() {
+        return evenementId;
     }
 
-    public void setEvenement_id(int evenement_id) {
-        this.evenement_id = evenement_id;
+    public void setevenementId(int evenementId) {
+        this.evenementId = evenementId;
     }
 
     public Double getCandidat_bareme() {
@@ -48,8 +49,11 @@ public class Criteres {
     public void setCriteres_id(int criteres_id) {
         this.criteres_id = criteres_id;
     }
-
-    public Criteres() {
+    public String getDetail() {
+        return detail;
+    }
+    public void  setDetail(String detail) {
+        this.detail = detail; 
     }
 
 }
